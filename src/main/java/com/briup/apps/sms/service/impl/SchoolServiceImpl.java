@@ -11,7 +11,7 @@ import com.briup.apps.sms.service.SchoolService;
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public abstract class SchoolServiceImpl 
+public  class SchoolServiceImpl 
 	implements SchoolService {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
