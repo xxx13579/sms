@@ -5,7 +5,7 @@ public class Clazz {
 	private long id;
 	private String name;
 	private String begin_time;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(long id) {
