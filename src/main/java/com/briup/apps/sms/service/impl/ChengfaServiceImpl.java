@@ -30,7 +30,7 @@ public class ChengfaServiceImpl implements ChengfaService {
 
 
 	@Override
-	public void saveOrUpdate(Chengfa chengfa) throws Exception {
+	public void saveOrUpdate(Chengfa chengfa) throws Exception { 
 
 		if(chengfa.getId()==null) {
 
