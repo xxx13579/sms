@@ -26,7 +26,8 @@ public abstract class SchoolServiceImpl
 	public void saveOrUpdate(School school) throws Exception {
 		if(school.getId()==null) {
 			schoolDao.insert(school);
-		} else {
+		} 
+		else {
 			schoolDao.update(school);
 		}
 
