@@ -1,7 +1,5 @@
 package com.briup.apps.sms.web.contorller;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,19 +7,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.briup.apps.sms.bean.Student_Course;
-import com.briup.apps.sms.service.Student_CourseService;
+import com.briup.apps.sms.bean.User_role;
+import com.briup.apps.sms.service.User_roleService;
 
 @RestController
-@RequestMapping("Student_Course")
-public class Student_CourseController{
+@RequestMapping("/User_role")
+public class User_roleController {
 
 	@Autowired
-	private Student_CourseService student_courseService;
+	private User_roleService User_roleService;
 
-	// http://localhost:8080/student_courseService;
+	// http://localhost:8080/User_role/selectAll
 	@GetMapping("selectAll")
-	public List<Student_Course> selectAll(){
-		return student_courseService.selectAll();
+	public List<User_role> selectAll(){
+		return User_roleService.selectAll();
 	}
+
+
+
+
+
 }
