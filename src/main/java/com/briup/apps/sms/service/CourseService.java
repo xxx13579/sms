@@ -1,5 +1,12 @@
 package com.briup.apps.sms.service;
 
-public interface CourseService {
+import java.util.List;
 
+import com.briup.apps.sms.bean.Course;
+
+public interface CourseService {
+	
+    List<Course> selectAll();
+    
+    void saveOrUpdate(Course course) throws Exception;
 }
