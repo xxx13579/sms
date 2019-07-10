@@ -1,15 +1,15 @@
 package com.briup.apps.sms.bean;
 
 public class School {
-private long id;
+private Long id;
 private String name;
 private String description;
 private String tel;
 private String address;
-public long getId() {
+public Long getId() {
 	return id;
 }
-public void setId(long id) {
+public void setId(Long id) {
 	this.id = id;
 }
 public String getName() {
@@ -36,5 +36,6 @@ public String getAddress() {
 public void setAddress(String address) {
 	this.address = address;
 }
+
 
 }
