@@ -1,6 +1,6 @@
 package com.briup.apps.sms.bean;
 
-public class school {
+public class School {
 private Long id;
 private String name;
 private String description;
