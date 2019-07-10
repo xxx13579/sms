@@ -2,11 +2,11 @@ package com.briup.apps.sms.service;
 
 import java.util.List;
 
-import com.briup.apps.sms.bean.School;
+import com.briup.apps.sms.bean.Clazz;
 
 public interface ClazzService {
 
-	List<School> selectAll();
+	 List<Clazz> selectAll();
 
-	void saveOrUpdate(School school) throws Exception;
+	void saveOrUpdate(Clazz clazz) throws Exception;
 }
