@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.briup.apps.sms.bean.Clazz;
 
-//yi
+//y
 
 public interface ClazzService {
 
