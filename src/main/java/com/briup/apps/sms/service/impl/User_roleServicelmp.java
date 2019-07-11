@@ -18,8 +18,6 @@ public class User_roleServicelmp implements User_roleService {
 	// 依赖注入，实例化User_roleDao并且赋值给user_roleDao这个变量
 	@Resource
 	private User_roleDao user_roleDao;
-
-
 	
 	@Override
 	public List<User_role> selectAll(){

@@ -23,7 +23,6 @@ public class User_roleController {
 		return User_roleService.selectAll();
 	}
 
-
 //http://localhost:8080/user_role/deleteById?id=3
 	@GetMapping("deleteById")
 	public String deleteById(long id) {
