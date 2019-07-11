@@ -16,4 +16,5 @@ public interface RoleDao {
 	
 //	通过ID删除
 	void deleteById(long id);
+	
 }
