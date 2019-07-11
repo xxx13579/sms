@@ -40,6 +40,6 @@ public class User_roleServicelmp implements User_roleService {
 	@Override
 	public void deleteById(long id) throws Exception {
 		// TODO Auto-generated method stub
-		
+		user_roleDao.deleteById(id);
 	}
 }
