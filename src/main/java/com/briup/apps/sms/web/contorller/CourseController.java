@@ -48,10 +48,7 @@ public class CourseController {
 	}
 	
 	// http://localhost:8080/course/selectAll
-	@GetMapping("selectAll")
-	public List<Course> selectAll11(){
-		return courseService.selectAll();
-	}
+	
 	 
 }
 	
