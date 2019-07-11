@@ -35,6 +35,12 @@ public  class CollegeServicelmp
 	
 	}
 
+	@Override
+	public void deleteById(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
 
 
