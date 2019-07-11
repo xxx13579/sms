@@ -11,7 +11,7 @@ public interface ClazzService {
 
 	List<Clazz> selectAll();
 
-	void saveOrUpdate(Clazz school) throws Exception;
+	void saveOrUpdate(Clazz clazz) throws Exception;
 	
 	void deleteById(long id) throws Exception;
 }
