@@ -1,22 +1,21 @@
 package com.briup.apps.sms.service.impl;
 import java.util.List;
 import javax.annotation.Resource;
-
+ 
 import org.springframework.stereotype.Service;
 
 import com.briup.apps.sms.bean.Course;
-import com.briup.apps.sms.bean.School;
+
 import com.briup.apps.sms.dao.CourseDao;
-import com.briup.apps.sms.dao.SchoolDao;
+
 import com.briup.apps.sms.service.CourseService;
-import com.briup.apps.sms.service.SchoolService;
+
 
 /**
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public abstract class CourseServiceImpl 
-	implements CourseService {
+public abstract class CourseServiceImpl implements CourseService {
 	// 依赖注入，实例化CourseDao并且赋值给schoolDao这个变量
 	@Resource
 	private CourseDao courseDao;
@@ -34,11 +33,12 @@ public abstract class CourseServiceImpl
 		else {
 			courseDao.update(course);
 	}
-
-
-	
 	}
-
+	@Override
+	public void deleteById(long id) throws Exception {
+		courseDao.delectByID(id);
+	}
 }
+
 
 
