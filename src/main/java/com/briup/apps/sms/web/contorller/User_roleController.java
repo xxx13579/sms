@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,16 @@ public class User_roleController {
 
 	@Autowired
 	private User_roleService User_roleService;
-
+	@PostMapping("saveOrUpdate")
+	public String saveOrUpdate(User_role user_role) {
+		try {
+			User_roleService.saveOrUpdate(user_role);
+			return "保存或更新成功";
+		}catch(Exception e) {
+			e.printStackTrace();
+			return e.getMessage();
+		}
+	}
 	// http://localhost:8080/User_role/selectAll
 	@GetMapping("selectAll")
 	public List<User_role> selectAll(){
