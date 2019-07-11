@@ -17,5 +17,9 @@
   school_id=#{school_id}
   where id=#{id}
   </update>
+  <delete id="deleteById">
+  delete from sms_college where id = #{id}
+  </delete>
+  
   
 </mapper>
