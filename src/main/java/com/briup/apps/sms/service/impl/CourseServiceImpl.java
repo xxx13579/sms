@@ -15,7 +15,11 @@ import com.briup.apps.sms.service.CourseService;
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
+<<<<<<< HEAD
 public  class CourseServiceImpl implements CourseService {
+=======
+public class CourseServiceImpl implements CourseService {
+>>>>>>> 213bbb74fe7258360918a743a8699ea4577b884d
 	// 依赖注入，实例化CourseDao并且赋值给schoolDao这个变量
 	@Resource
 	private CourseDao courseDao;
@@ -24,7 +28,6 @@ public  class CourseServiceImpl implements CourseService {
 		// TODO Auto-generated method stub
 		return courseDao.selectAll();
 	}
-
 	@Override
 	public void saveOrUpdate(Course course) throws Exception {
 		if(course.getId()==null) {

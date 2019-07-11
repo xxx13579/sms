@@ -6,6 +6,7 @@ public class Course {
 	private String name;
 	private String credit;
 	private Long user_id;
+	
 	public Long getId() {
 		return id;
 	}

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.briup.apps.sms.bean.Course;
 import com.briup.apps.sms.service.CourseService;
 
@@ -47,10 +48,15 @@ public class CourseController {
 		
 	}
 	
+<<<<<<< HEAD
 	// http://localhost:8080/course/selectAll
 	
 	 
+=======
+>>>>>>> 213bbb74fe7258360918a743a8699ea4577b884d
 }
+	 
+
 	
 	
 
