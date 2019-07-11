@@ -14,27 +14,29 @@ import com.briup.apps.sms.service.ClazzService;
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public  class ClazzServiceImpl implements ClazzService {
+public  class ClazzServiceImpl implements  ClazzService {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
-	private ClazzDao clazzDao;
-	
+	private  ClazzDao  clazzDao;
 	@Override
-	public List<Clazz> selectAll() {
+	public List< Clazz> selectAll() {
 		// TODO Auto-generated method stub
-		return clazzDao.selectAll();
+		return  clazzDao.selectAll();
 	}
 
-	@Override 
-	public void saveOrUpdate(Clazz clazz) throws Exception {
-		// TODO Auto-generated method stub
+	@Override
+	public void saveOrUpdate( Clazz  clazz) throws Exception {
 		if(clazz.getId()==null) {
 			clazzDao.insert(clazz);
 		} 
 		else {
 			clazzDao.update(clazz);
 	}
-	}  
+
+
+	
+	}
+
 }
 
 
