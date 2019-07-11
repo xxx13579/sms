@@ -6,4 +6,6 @@
   <select id="selectAll" resultType="com.briup.apps.sms.bean.College">
     select * from sms_college
   </select>
+  <insert id=""></insert>
+  
 </mapper>
