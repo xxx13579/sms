@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.User;
 import com.briup.apps.sms.service.UserService;
-
+/**
+ * 用户控制
+ **/
 
 @RestController
 @RequestMapping("/user")
