@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.apps.sms.dao.ChengfaDao">
+  <select id="selectAll" resultType="com.briup.apps.sms.bean.Chengfa">
+    select * from sms_chengfa
+  </select>
+   <insert id="insert">
+  	insert into sms_chengfa values(null,#{name},#{description},#{tel},#{address});
+  </insert>
+
+  <update id="update">
+  	update sms_chengfa3
+	set name=#{name},
+	description=#{description},
+	tel=#{tel},
+	address=#{address}
+	where id = #{id}
+  </update>
+
+  <delete id="deleteById">
+  	delete from sms_chengfa where id = #{id}
+  </delete>
+</mapper>
