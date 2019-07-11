@@ -1,16 +1,15 @@
 package com.briup.apps.sms.web.contorller;
 	
-	import java.util.List;
+import java.util.List;
 	
-	import org.springframework.beans.factory.annotation.Autowired;
-	import org.springframework.web.bind.annotation.GetMapping;
-	import org.springframework.web.bind.annotation.RequestMapping;
-	import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.Role;
-import com.briup.apps.sms.bean.School;
 import com.briup.apps.sms.service.RoleService;
-import com.briup.apps.sms.service.SchoolService;
 	
 	@RestController
 	@RequestMapping("/role")
@@ -18,7 +17,16 @@ import com.briup.apps.sms.service.SchoolService;
 	
 		@Autowired
 		private RoleService roleService;
-	
+		@PostMapping("saveOrUpdate")
+		public String saveOrUpdate(Role role) {
+			try {
+				roleService.saveOrUpdate(role);
+				return "保存或更新成功";
+			}catch(Exception e) {
+				e.printStackTrace();
+				return e.getMessage();
+			}
+		}
 		// http://localhost:8080/role/selectAll
 		@GetMapping("selectAll")
 		public List<Role> selectAll(){

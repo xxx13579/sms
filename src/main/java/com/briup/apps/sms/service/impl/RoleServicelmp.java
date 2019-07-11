@@ -3,11 +3,8 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
-import com.briup.apps.sms.bean.College;
 import com.briup.apps.sms.bean.Role;
-import com.briup.apps.sms.dao.CollegeDao;
 import com.briup.apps.sms.dao.RoleDao;
-import com.briup.apps.sms.service.CollegeService;
 import com.briup.apps.sms.service.RoleService;
 
 /**
@@ -16,7 +13,7 @@ import com.briup.apps.sms.service.RoleService;
 @Service
 public  class RoleServicelmp 
 	implements RoleService {
-	// 依赖注入，实例化CollegeDao并且赋值给collegeDao这个变量
+	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
 	@Resource
 	private RoleDao roleDao;
 	@Override
