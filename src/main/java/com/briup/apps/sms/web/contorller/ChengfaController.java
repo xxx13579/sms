@@ -12,7 +12,7 @@ import com.briup.apps.sms.service.ChengfaService;
 
 @RestController
 @RequestMapping("/chengfa")
-public class ChengfaController {
+public class ChengfaController { 
 
 	@Autowired
 	private ChengfaService chengfaService;
