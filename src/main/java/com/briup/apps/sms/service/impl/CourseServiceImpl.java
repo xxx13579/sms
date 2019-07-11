@@ -15,7 +15,7 @@ import com.briup.apps.sms.service.CourseService;
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public abstract class CourseServiceImpl implements CourseService {
+public class CourseServiceImpl implements CourseService {
 	// 依赖注入，实例化CourseDao并且赋值给schoolDao这个变量
 	@Resource
 	private CourseDao courseDao;
