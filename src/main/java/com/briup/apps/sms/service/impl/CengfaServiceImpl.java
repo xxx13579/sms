@@ -13,7 +13,7 @@ import com.briup.apps.sms.service.ChengfaService;
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public abstract class CengfaServiceImpl 
+public  class CengfaServiceImpl 
 	implements ChengfaService {
 	// 依赖注入，实例化ChengfaDao并且赋值给ChengfaDao这个变量
 	@Resource
@@ -33,6 +33,12 @@ public abstract class CengfaServiceImpl
 
 
 	
+	}
+
+	@Override
+	public void deleteById(long id) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
