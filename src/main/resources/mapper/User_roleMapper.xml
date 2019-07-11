@@ -6,10 +6,10 @@
   <select id="selectAll" resultType="com.briup.apps.sms.bean.User_role">
     select * from sms_user_role
   </select>
-  <insert id="">
+  <insert id="insert">
    insert into sms_role values(null,#{user_id},#{role_id})
    </insert>
- <update id="">
+ <update id="update">
  update sms_user_role
  set user_id=#{user_id}
   role_id=#{role_id}
