@@ -16,7 +16,6 @@
   description=#{description}
   school_id=#{school_id}
   where id=#{id}
-  
   </update>
   
 </mapper>
