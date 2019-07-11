@@ -36,8 +36,9 @@ public  class CollegeServicelmp
 	}
 
 	@Override
-	public void deleteById(long id) {
+	public void deleteById(long id) throws Exception{
 		// TODO Auto-generated method stub
+		collegeDao.deleteById(id);
 		
 	}
 
