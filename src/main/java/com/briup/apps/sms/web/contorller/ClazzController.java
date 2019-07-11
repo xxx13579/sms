@@ -22,6 +22,19 @@ public class ClazzController {
 	public List<Clazz> selectAll(){
 		return clazzService.selectAll();
 	}
+	// http://localhost:8080/school/deleteById?id=3
+		@GetMapping("deleteById")
+		public String deleteById(long id) {
+			try {
+				clazzService.deleteById(id);
+				return "删除成功";
+			} catch (Exception e) {
+				// 打印异常信息，返回异常信息
+				e.printStackTrace();
+				return e.getMessage();
+			}
+		}
+
 
 
 
