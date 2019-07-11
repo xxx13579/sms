@@ -9,37 +9,32 @@ import org.springframework.stereotype.Service;
 import com.briup.apps.sms.bean.Clazz;
 import com.briup.apps.sms.dao.ClazzDao;
 import com.briup.apps.sms.service.ClazzService;
-
 /**
  * 校园逻辑逻辑处理的实现类
  * */
 @Service
-public  class ClazzServiceImpl implements  ClazzService {
-	// 依赖注入，实例化ClazzDao并且赋值给clazzDao这个变量
+public  class ClazzServiceImpl implements ClazzService {
+	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
-	private  ClazzDao  clazzDao;
+	private ClazzDao clazzDao;
 	@Override
-	public List< Clazz> selectAll() {
+	public List<Clazz> selectAll() {
 		// TODO Auto-generated method stub
-		return  clazzDao.selectAll();
+		return clazzDao.selectAll();
 	}
 
 	@Override
-	public void saveOrUpdate( Clazz  clazz) throws Exception {
+	public void saveOrUpdate(Clazz clazz) throws Exception {
 		if(clazz.getId()==null) {
 			clazzDao.insert(clazz);
 		} 
 		else {
 			clazzDao.update(clazz);
-	}
-
-
-	
+		}	
 	}
 
 	@Override
-	
-	public void deleteById(long id) throws Exception{
+	public void deleteById(long id) throws Exception {
 		// TODO Auto-generated method stub
 		clazzDao.deleteById(id);
 	}
