@@ -7,6 +7,7 @@ package com.briup.apps.sms.service;
 	
 	public interface RoleService {
 	
+		
 		List<Role> selectAll();
 
 		void saveOrUpdate(Role role) throws Exception;

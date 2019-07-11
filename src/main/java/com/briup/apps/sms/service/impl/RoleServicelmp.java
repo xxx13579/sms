@@ -34,8 +34,6 @@ public  class RoleServicelmp
 			roleDao.update(role);
 	}
 
-
-	
 	}
 
 	@Override

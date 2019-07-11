@@ -9,7 +9,6 @@
   <insert id="">
   insert into sms_role values(null,#{name} )
   </insert>
-  
   <update id="">
   update sms_role
   set name=#{name}
