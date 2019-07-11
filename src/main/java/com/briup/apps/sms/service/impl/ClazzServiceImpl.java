@@ -15,7 +15,7 @@ import com.briup.apps.sms.service.ClazzService;
  * */
 @Service
 public  class ClazzServiceImpl implements  ClazzService {
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
+	// 依赖注入，实例化ClazzDao并且赋值给clazzDao这个变量
 	@Resource
 	private  ClazzDao  clazzDao;
 	@Override
@@ -38,9 +38,10 @@ public  class ClazzServiceImpl implements  ClazzService {
 	}
 
 	@Override
-	public void deleteById(long id) {
+	
+	public void deleteById(long id) throws Exception{
 		// TODO Auto-generated method stub
-		
+		clazzDao.deleteById(id);
 	}
 
 }
