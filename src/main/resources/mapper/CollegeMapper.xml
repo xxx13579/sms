@@ -10,7 +10,7 @@
   insert into sms_college values(null,#{name},#{description},#{school_id})
   
   </insert>
-  <update id="">
+  <update id="update">
   update sms_college
  set name=#{name}
   description=#{description}
