@@ -48,12 +48,6 @@ public class CourseController {
 		
 	}
 	
-<<<<<<< HEAD
-	// http://localhost:8080/course/selectAll
-	
-	 
-=======
->>>>>>> 213bbb74fe7258360918a743a8699ea4577b884d
 }
 	 
 
