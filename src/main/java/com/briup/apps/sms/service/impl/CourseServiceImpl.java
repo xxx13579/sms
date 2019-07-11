@@ -24,7 +24,6 @@ public class CourseServiceImpl implements CourseService {
 		// TODO Auto-generated method stub
 		return courseDao.selectAll();
 	}
-
 	@Override
 	public void saveOrUpdate(Course course) throws Exception {
 		if(course.getId()==null) {
