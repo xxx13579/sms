@@ -37,6 +37,12 @@ public  class Student_CourseServicelmp
 	
 	}
 
+	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
 
 
