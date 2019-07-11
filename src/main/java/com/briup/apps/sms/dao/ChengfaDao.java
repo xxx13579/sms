@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.briup.apps.sms.bean.Chengfa;
 
-public interface ChengfaDao {
+public interface ChengfaDao { 
 //	查询所有
 	List<Chengfa> selectAll();
 //	输入
@@ -14,3 +14,4 @@ public interface ChengfaDao {
 	
 
 }
+
