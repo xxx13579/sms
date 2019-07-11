@@ -22,4 +22,5 @@
   <delete id="deleteById">
   	delete from sms_course where id = #{id}
   </delete>
+  
 </mapper>

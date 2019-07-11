@@ -13,4 +13,5 @@ public interface CourseDao {
    void update(Course course);
 //通过ID删除
    void delectByID(long id);
+   
 }
