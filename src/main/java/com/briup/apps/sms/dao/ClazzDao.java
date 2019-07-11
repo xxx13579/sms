@@ -11,5 +11,7 @@ public interface ClazzDao {
 	void insert(Clazz clazz);
 
 	void update(Clazz clazz);
+	
+	void deleteDyId(long id);
 
 }
