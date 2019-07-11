@@ -11,4 +11,6 @@ List<User_role> selectAll() ;
 void insert(User_role user_role);
 //更新
 void update(User_role user_role);
+//通过ID删除
+void deleteById(long id);
 }

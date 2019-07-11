@@ -34,4 +34,14 @@ public class User_roleServicelmp implements User_roleService {
 			user_roleDao.update(user_role);
 		}
 	}
+	@Override
+	public void saveOrUpdate(User_role user_role) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }
