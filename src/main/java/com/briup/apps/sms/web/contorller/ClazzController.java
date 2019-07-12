@@ -17,7 +17,7 @@ public class ClazzController {
 
 	@Autowired
 	private ClazzService clazzService;
-	@PostMapping("saveOrUpdate")
+	@PostMapping("/saveOrUpdate")
 	public String saveOrUpdate(Clazz clazz) {
 		try {
 			clazzService.saveOrUpdate(clazz);
@@ -46,10 +46,5 @@ public class ClazzController {
 				return e.getMessage();
 			}
 		}
-
-
-
-
-
 
 }
